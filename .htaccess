@@ -1,0 +1,30 @@
+RewriteEngine On
+
+# Permitir acesso ao diretório 'public' e seu conteúdo
+RewriteCond %{REQUEST_URI} ^/public/ [NC]
+RewriteRule ^ - [L]
+
+# Redirecionar para public/index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ public/index.php?url=%{REQUEST_URI} [QSA,L]
+
+DirectoryIndex public/index.php
+
+# Impedir acesso direto a arquivos PHP
+<FilesMatch "\.php$">
+  Order Deny,Allow
+  Deny from all
+</FilesMatch>
+
+# Permitir acesso público ao arquivo front controller
+<Files "index.php">
+  Allow from all
+</Files>
+
+<Files ".env">
+    Require all denied
+</Files>
+
+ErrorDocument 403 http://localhost/metendo-a-colher/
+Options -Indexes
