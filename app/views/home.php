@@ -4,14 +4,25 @@
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="<?= URL; ?>public/assets/img/logo.webp" alt="" width="80" height="80" class="d-inline-block align-text-top">
-                Metendo a Colher
+                <div class="d-flex flex-column ms-3">
+                    <strong>Metendo a Colher</strong>
+                    <small class="m-0" style="font-size: 0.8rem;">Conselhos Matrimoniais</small>
+                </div>
             </a>
         </div>
     </nav>
 
-    <span>Bem-vindo ao 'Metendo a Colher', onde a magia da Inteligência Artificial encontra o coração do seu lar. Sabemos que os caminhos do amor podem ser complexos, repletos de encruzilhadas e desafios. É aqui que entramos, oferecendo uma pitada de sabedoria digital para temperar os laços do seu relacionamento. Com uma colherada de conselhos amigáveis e insights gerados por IA, aspiramos a adoçar o seu dia a dia a dois.</span>
-    <small>(Lembre-se: nossa essência é inspirar harmonia e compreensão, não substituir a orientação de profissionais. Para questões profundas ou persistentes, um especialista em relacionamentos ainda é o seu melhor aliado. Mergulhe conosco nessa jornada de descoberta e crescimento mútuo, temperada com carinho, tecnologia e um toque de humor. Porque, às vezes, tudo que precisamos é de alguém (ou algo) para 'meter a colher' da maneira certa!)</small>
+    <div class="description mt-3" style="font-size: 1rem;">
+        <p>Seja bem vindo!</p>
+        <p>Utilizamos inteligência artifical para dar conselhos matrimoniais e uma sugestão de carta para ser enviada para o seu cônjuge. <br> Melhore seu relacionamento com ajuda de inteligência artifical.</p>
+        <p>Preencha o formulário abaixo e clique Enviar para ver o resultado.</p>
+        <p>Experimente gratuitamente!</p>
+        <p class="fw-bold text-danger" style="font-size: 0.8rem;">Não se preocupe, este site não usa cookies nem armazena nenhum dado ou informação do usuário. <br>
+            Todas as informações coletadas são utilizadas somente para gerar os resultados necessários e descartadas em seguida.</p>
+    </div>
+
     <hr>
+
     <?php if (empty($success)) : ?>
 
         <div class="row visually-hidden" id="spinner">
