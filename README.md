@@ -11,7 +11,7 @@ tecnologia e um toque de humor. Porque, às vezes, tudo que precisamos é de alg
 
 ### Para executar o app
 
-- Executar: npm install
+- Executar: composer install
 - Renomear o arquivo .env.example para .env
 - Atribuir as variáveis de ambiente no arquivo .env
 - Rodar o servidor Apache (xampp, por exemplo)
