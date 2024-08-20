@@ -8,3 +8,11 @@ Com uma colherada de conselhos amigáveis e insights gerados por IA, aspiramos a
 (Lembre-se: nossa essência é inspirar harmonia e compreensão, não substituir a orientação de profissionais. Para questões profundas ou persistentes, 
 um especialista em relacionamentos ainda é o seu melhor aliado. Mergulhe conosco nessa jornada de descoberta e crescimento mútuo, temperada com carinho, 
 tecnologia e um toque de humor. Porque, às vezes, tudo que precisamos é de alguém (ou algo) para 'meter a colher' da maneira certa!)
+
+### Para executar o app
+
+- Executar: npm install
+- Renomear o arquivo .env.example para .env
+- Atribuir as variáveis de ambiente no arquivo .env
+- Rodar o servidor Apache (xampp, por exemplo)
+- Abrir o projeto no navegador: http://localhost/metendo-a-colher

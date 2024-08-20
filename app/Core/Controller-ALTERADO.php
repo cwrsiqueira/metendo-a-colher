@@ -10,7 +10,8 @@ class Controller
         if (file_exists($templatePath)) {
             require_once $templatePath;
         } else {
-            die("Página não existe.");
+            require __DIR__ . '/../views/erro.php';
+            exit;
         }
     }
 
@@ -18,6 +19,11 @@ class Controller
     {
         extract($viewData);
         $viewPath = __DIR__ . '/../views/' . $viewName . '.php';
-        require $viewPath;
+        if (file_exists($viewPath)) {
+            require $viewPath;
+        } else {
+            require __DIR__ . '/../views/erro.php';
+            exit;
+        }
     }
 }
