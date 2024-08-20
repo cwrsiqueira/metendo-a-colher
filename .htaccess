@@ -26,5 +26,5 @@ DirectoryIndex public/index.php
     Require all denied
 </Files>
 
-ErrorDocument 403 http://localhost/metendo-a-colher/
+ErrorDocument 403 https://metendoacolher.com/
 Options -Indexes

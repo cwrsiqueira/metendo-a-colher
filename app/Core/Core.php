@@ -41,7 +41,7 @@ class Core extends Config
 
     public function loadPage(): void
     {
-        $this->classLoad = "App\\Controllers\\" . $this->urlController;
+        $this->classLoad = "App\\controllers\\" . $this->urlController;
 
         if (class_exists($this->classLoad)) {
             $this->loadClass();
