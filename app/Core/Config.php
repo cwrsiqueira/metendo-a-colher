@@ -29,7 +29,11 @@ abstract class Config
     protected function config(): void
     {
         // URL do sistema
-        define('URL', ENV['APP_URL']);
+        if (ENV['APP_ENVIRONMENT'] == 'local') {
+            define('URL', ENV['APP_URL_DEVELOPMENT']);
+        } else {
+            define('URL', ENV['APP_URL_PRODUCTION']);
+        }
 
         // Controllers padrão
         define('CONTROLLER', 'Home');

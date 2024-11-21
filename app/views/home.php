@@ -59,7 +59,7 @@
             </div>
         </div>
 
-        <form method="post" action="<?= ENV['APP_URL'] ?>checkout" class="mt-3 needs-validation" id="form" novalidate>
+        <form method="post" action="<?= URL ?>checkout" class="mt-3 needs-validation" id="form" novalidate>
             <div class="row">
                 <div class="col-lg form-group">
                     <label for="yourname" class="form-label">1. Seu nome:</label>
