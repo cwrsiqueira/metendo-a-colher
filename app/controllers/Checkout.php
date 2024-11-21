@@ -41,14 +41,12 @@ class Checkout extends Controller
                 "unit_price" => 1.99
             ]
         ];
-        $payer = [];
 
-        /** PAYER DE TESTE */
-        // $payer = [
-        //     "name" => "Carlos",
-        //     "surname" => "Siqueira",
-        //     "email" => "test_user_86624484@testuser.com",
-        // ];
+        $payer = [
+            "name" => "",
+            "surname" => "",
+            "email" => "",
+        ];
 
         $request = $this->createPreferenceRequest($items, $payer);
 
