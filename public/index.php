@@ -2,7 +2,7 @@
 session_start();
 ob_start();
 define('ACCESS_ALLOWED', true);
-require "../vendor/autoload.php";
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use \App\common\Environment;
 

@@ -14,5 +14,7 @@
             "email": "cwrsiqueira@msn.com"
         }
     ],
-    "require": {}
+    "require": {
+        "mercadopago/dx-php": "3.0.8"
+    }
 }

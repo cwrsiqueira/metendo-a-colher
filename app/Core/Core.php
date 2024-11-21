@@ -4,7 +4,7 @@ namespace App\Core;
 
 class Core extends Config
 {
-    private string $url, $urlController, $urlParameter, $urlSlugController, $classLoad;
+    private string $url, $urlController, $urlMethod, $urlParameter, $urlSlugController, $classLoad;
     private array $urlArray, $format;
 
     public function __construct()
@@ -18,6 +18,9 @@ class Core extends Config
 
             if (isset($this->urlArray[2])) {
                 $this->urlController = $this->slugController($this->urlArray[2]);
+                if (isset($this->urlArray[3])) {
+                    $this->urlMethod = $this->slugMethod($this->urlArray[3]);
+                }
             } else {
                 $this->urlController = $this->slugController(CONTROLLERERRO);
             }
@@ -39,6 +42,11 @@ class Core extends Config
         return str_replace(' ', '', ucwords(str_replace('-', ' ', strtolower($slugController))));
     }
 
+    private function slugMethod($slugMethod)
+    {
+        return str_replace(' ', '', str_replace('-', ' ', strtolower($slugMethod)));
+    }
+
     public function loadPage(): void
     {
         $this->classLoad = "App\\controllers\\" . $this->urlController;
@@ -54,8 +62,9 @@ class Core extends Config
     private function loadClass(): void
     {
         $classPage = new $this->classLoad();
-        if (method_exists($classPage, 'index')) {
-            $classPage->index();
+        $method = $this->urlMethod ?? 'index';
+        if (method_exists($classPage, $method)) {
+            $classPage->$method();
         } else {
             die("Erro: Tente novamente ou contacte o suporte: " . EMAILSUPORTE);
         }

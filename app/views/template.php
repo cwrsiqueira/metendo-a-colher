@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tabs de SEO -->
-    <link rel="author" href="https://cwwebdev.com.br" />
+    <link rel="author" href="https://carlosdev.com.br" />
     <meta name="description" content="<?= ENV['APP_DESCRIPTION'] ?>">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Carlos Wagner webdev" />
@@ -36,8 +36,6 @@
             font-weight: lighter;
         }
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5865817649832793" crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-5865817649832793">
 </head>
 
 <body>
