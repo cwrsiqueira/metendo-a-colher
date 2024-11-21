@@ -22,7 +22,7 @@ class Checkout extends Controller
         $_SESSION['dados'] = $dados;
 
         // Getting the access token from .env file (create your own function)
-        $mpAccessToken = ENV['MERCADOPAGO_TEST_ACCESS_TOKEN'];
+        $mpAccessToken = ENV['MERCADOPAGO_ACCESS_TOKEN'];
         // Set the token the SDK's config
         MercadoPagoConfig::setAccessToken($mpAccessToken);
         // (Optional) Set the runtime enviroment to LOCAL if you want to test on localhost
@@ -38,14 +38,17 @@ class Checkout extends Controller
                 "description" => "Conselhos matrimoniais por IA",
                 "currency_id" => "BRL",
                 "quantity" => 1,
-                "unit_price" => 0.99
+                "unit_price" => 1.99
             ]
         ];
-        $payer = [
-            "name" => "Carlos",
-            "surname" => "Siqueira",
-            "email" => "test_user_86624484@testuser.com",
-        ];
+        $payer = [];
+
+        /** PAYER DE TESTE */
+        // $payer = [
+        //     "name" => "Carlos",
+        //     "surname" => "Siqueira",
+        //     "email" => "test_user_86624484@testuser.com",
+        // ];
 
         $request = $this->createPreferenceRequest($items, $payer);
 

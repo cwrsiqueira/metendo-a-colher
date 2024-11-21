@@ -63,21 +63,21 @@
             <div class="row">
                 <div class="col-lg form-group">
                     <label for="yourname" class="form-label">1. Seu nome:</label>
-                    <input type="text" class="form-control" name="yourname" value="teste" required>
+                    <input type="text" class="form-control" name="yourname" x required>
                     <div class="invalid-feedback">
                         Campo Obrigatório.
                     </div>
                 </div>
                 <div class="col-lg-2 form-group">
                     <label for="yourage" class="form-label">2. Sua idade:</label>
-                    <input type="number" class="form-control" name="yourage" value="40" required>
+                    <input type="number" class="form-control" name="yourage" required>
                     <div class="invalid-feedback">
                         Campo Obrigatório.
                     </div>
                 </div>
                 <div class="col-lg-4 form-group">
                     <label for="yourjob" class="form-label">3. Seu trabalho:</label>
-                    <input type="text" class="form-control" name="yourjob" value="teste" required>
+                    <input type="text" class="form-control" name="yourjob" required>
                     <div class="invalid-feedback">
                         Campo Obrigatório.
                     </div>
@@ -86,21 +86,21 @@
             <div class="row">
                 <div class="col-lg form-group">
                     <label for="spousername" class="form-label">4. Nome do cônjuge:</label>
-                    <input type="text" class="form-control" name="spousername" value="teste" required>
+                    <input type="text" class="form-control" name="spousername" required>
                     <div class="invalid-feedback">
                         Campo Obrigatório.
                     </div>
                 </div>
                 <div class="col-lg-2 form-group">
                     <label for="spouserage" class="form-label">5. Idade do cônjuge:</label>
-                    <input type="number" class="form-control" name="spouserage" value="40" required>
+                    <input type="number" class="form-control" name="spouserage" required>
                     <div class="invalid-feedback">
                         Campo Obrigatório.
                     </div>
                 </div>
                 <div class="col-lg-4 form-group">
                     <label for="spouserjob" class="form-label">6. Trabalho do cônjuge:</label>
-                    <input type="text" class="form-control" name="spouserjob" value="teste" required>
+                    <input type="text" class="form-control" name="spouserjob" required>
                     <div class="invalid-feedback">
                         Campo Obrigatório.
                     </div>
@@ -110,7 +110,7 @@
                 <div class="col-lg-3 form-group">
                     <label for="agemarried" class="form-label">7. Anos de relacionamento: <br> <small>(Em
                             anos)</small></label>
-                    <input type="number" name="agemarried" class="form-control" value="10" required>
+                    <input type="number" name="agemarried" class="form-control" required>
                     <div class="invalid-feedback">
                         Campo Obrigatório.
                     </div>
@@ -118,7 +118,7 @@
                 <div class="col-lg form-group">
                     <label for="focus" class="form-label">8. Pra você, quais são os objetivos do casamento <br> <small>(Até
                             5 palavras)</small></label>
-                    <input type="text" name="focus" class="form-control" value="teste" required>
+                    <input type="text" name="focus" class="form-control" required>
                     <div class="invalid-feedback">
                         Campo Obrigatório. Escreva pelo menos 1 palavra.
                     </div>
@@ -129,7 +129,7 @@
                     <label for="mainproblem" class="form-label">9. Descrição do problema <br> <small>(Quanto mais
                             informações e mais precisas forem, melhores serão o diagnóstico e as sugestões da Inteligência
                             Artificial)</small></label>
-                    <textarea name="mainproblem" id="mainproblem" class="form-control" rows="5" required>teste</textarea>
+                    <textarea name="mainproblem" id="mainproblem" class="form-control" rows="5" required></textarea>
                     <div class="invalid-feedback">
                         Campo Obrigatório.
                     </div>
@@ -139,7 +139,7 @@
                 <div class="col-lg">
                     <label for="one" class="form-label">10. Se você fosse resumir todos os problemas do seu relacionamento
                         em até 5 palavras, quais palavras você usaria? <small>(Até 5 palavras)</small></label>
-                    <input type="text" name="one" id="one" class="form-control" value="teste" required>
+                    <input type="text" name="one" id="one" class="form-control" required>
                     <div class="invalid-feedback">
                         Campo Obrigatório. Escreva pelo menos 1 palavra.
                     </div>
