@@ -8,7 +8,7 @@
 
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
-    const mp = new MercadoPago("<?= ENV['MERCADOPAGO_PUBLIC_KEY'] ?>");
+    const mp = new MercadoPago("<?= ENV['MERCADOPAGO_TEST_PUBLIC_KEY'] ?>");
     const bricksBuilder = mp.bricks();
 
     mp.bricks().create("wallet", "wallet_container", {

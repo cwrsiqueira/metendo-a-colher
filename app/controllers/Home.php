@@ -20,7 +20,7 @@ class Home extends Controller
             $apiKey = ENV['GPT_API_KEY'];
             $endpoint = 'https://api.openai.com/v1/chat/completions';
 
-            $dados = filter_input_array(INPUT_POST);
+            $dados = $_SESSION['dados'];
 
             // Answered by user
             $spouse1Name = $dados['yourname'];
@@ -98,7 +98,7 @@ class Home extends Controller
             if ($reply) {
                 $this->data['success'] = $reply;
             } else {
-                $this->data['error'] = "Algo deu errado. Tente novamente!";
+                $this->data['error'] = "Erro no processamento! Por favor, entre em contato com o " . ENV['EMAIL_SUPORTE'] . ".";
             }
         }
 

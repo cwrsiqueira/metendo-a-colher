@@ -43,6 +43,12 @@
 
     <hr>
 
+    <?php if (!empty($_SESSION['mensagem'])) {
+        echo $_SESSION['mensagem'];
+        unset($_SESSION['mensagem']);
+    }
+    ?>
+
     <?php if (empty($success)) : ?>
 
         <div class="row visually-hidden" id="spinner">
@@ -152,12 +158,12 @@
     <?php else : ?>
 
         <p class="show-content">
-            <a href="<?php URL; ?>">Voltar</a>
+            <a href="<?= URL ?>">Voltar</a>
             <hr>
             <?= $success ?>
             <hr>
         <p>IMPORTANTE! Inteligência Artificial pode cometer erros. Considere verificar informações importantes.</p>
-        <a href="<?php URL; ?>">Voltar</a>
+        <a href="<?= URL ?>">Voltar</a>
         </p>
 
     <?php endif; ?>
